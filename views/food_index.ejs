@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to Foods</h1>
+    <style type="text/css">
+        body {
+            color: blanchedalmond;
+            background-color: #6b705c;
+        }
+    </style>
+      <% for(let i = 0; i < foods.length; i++) { %>
+    <% const nme = foods[i].name %>
+        <p>
+        <a href="/foods/<%= i %>" style=" color:#e9c46a; font-size: 20px">
+            <%= nme.charAt(0).toUpperCase()+nme.slice(1) %>
+        </a>
+    </p>
+    <% } %>
+  
+</body>
+
+</html>

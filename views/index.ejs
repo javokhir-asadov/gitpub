@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar</title>
+</head>
+
+<body>
+    <h1>Welcome to gitPub</h1>
+    <style type="text/css">
+        body {
+            color: blanchedalmond;
+            background-color: #2a9d8f;
+        }
+    </style>
+      <% for(let i = 0; i < drinks.length; i++) { %>
+    <% const str = drinks[i].name %>
+        <p>
+        <a href="/drinks/<%= i %>" style=" color:#e9c46a; font-size: 20px">
+            <%= str.charAt(0).toUpperCase()+str.slice(1) %>
+        </a>
+    </p>
+    <% } %>
+  
+</body>
+
+</html>
